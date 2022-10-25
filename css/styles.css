@@ -1,0 +1,30 @@
+/* Selectores */
+
+body {
+  background: linear-gradient(to bottom, #1393d7, white);
+  min-height: 100vh;
+}
+
+nav {
+  background: url(../pictures/wallpaperflare-cropped.jpg), no-repeat;
+  background-position: 50% 47%;
+  background-size: cover;
+}
+
+/* Clases */
+
+.nav-item {
+  font-size: 1.6rem;
+}
+
+.navbar-collapse {
+  justify-content: end;
+}
+
+/* ID's */
+
+#logo {
+  width: 70px;
+  border: 10px double white;
+  border-radius: 25%;
+}
