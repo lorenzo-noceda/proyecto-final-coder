@@ -38,6 +38,15 @@ footer {
 
 /* Clases */
 
+.bio-p {
+  max-width: 700px;
+  text-align: center;
+}
+
+.bio-img {
+  max-width: 600px;
+}
+
 .carousel-inner {
   max-height: 87vh;
   max-width: 83vw;
@@ -52,14 +61,15 @@ footer {
   justify-content: end;
 }
 
-#movie-card {
-  width: 80%;
-}
-
 /* ID's */
 
 #logo {
   width: 70px;
   border: 10px double white;
   border-radius: 25%;
+}
+
+#movie-card {
+  width: 80%;
+  background-color: rgb(240, 240, 240);
 }
