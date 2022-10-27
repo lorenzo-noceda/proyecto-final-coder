@@ -3,7 +3,6 @@
 body,
 main {
   background: linear-gradient(to bottom, #1393d7, white);
-  min-height: 100vh;
 }
 
 ul {
@@ -39,12 +38,16 @@ footer {
 /* Clases */
 
 .bio-p {
-  max-width: 700px;
   text-align: center;
 }
 
 .bio-img {
   max-width: 600px;
+}
+
+.card {
+  min-width: 200px;
+  max-width: 400px;
 }
 
 .carousel-inner {
@@ -61,7 +64,23 @@ footer {
   justify-content: end;
 }
 
+.max-w-700 {
+  max-width: 700px;
+}
+
+.tienda-img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
 /* ID's */
+
+#carrito {
+  font-size: 3rem;
+  max-width: 100px;
+  padding: 10px;
+  border-radius: 10%;
+}
 
 #logo {
   width: 70px;
@@ -70,6 +89,16 @@ footer {
 }
 
 #movie-card {
-  width: 80%;
+  max-width: 1000px;
+  width: 85%;
   background-color: rgb(240, 240, 240);
+}
+
+#form-sorteo {
+  border: 4px double rgb(143, 131, 131);
+  max-width: 800px;
+  display: flex;
+  flex-flow: column wrap;
+  border-radius: 2%;
+  font-weight: 600;
 }
