@@ -21,6 +21,9 @@
       crossorigin="anonymous"
     />
 
+    <!--BS Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -83,12 +86,107 @@
       </div>
     </nav>
     <main>
-      <div class="container">
-        <h1>Lorem ipsum dolor sit amet.</h1>
-      </div>
-    </main>
-    <footer></footer>
+      <h1>Bienvenidos a la web de Leo Messi</h1>
 
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="https://www.lavoz.com.ar/resizer/wSyRrDo5NcKR5x6CcC75A_bl0Yg=/1200x630/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/UI5O5B6Q2VES7G7NLNSZN6FULI.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-lg-block">
+              <h5>Copa America 2021</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="pictures/messi-gol-clasico.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-lg-block">
+              <h5>Real Madrid vs Barcelona - 2017</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://www.lavoz.com.ar/resizer/hM0_qL4V8-ovg5H9ZbFi2xSvkAQ=/1200x630/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/G5DXL2JAUVFF5EJ6KT35CEERAM.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-lg-block">
+              <h5>Semifinales - Mundial 2014</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container d-flex justify-content-center my-5">
+        <div class="card border-secondary rounded-4" id="movie-card">
+          <h4 class="card-title"><span class="fst-italic">"Messi" - </span>La pelicula</h4>
+          <div class="ratio ratio-16x9 w-75 mx-auto">
+            <iframe src="https://www.youtube.com/embed/C_BFQG40JYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>          
+          <div class="card-body">
+            <p class="card-text">Messi es una película documental de 2014 que trata de la vida y la carrera del futbolista argentino <span class="fw-bold"> Lionel Messi</span>, 
+              usando imágenes reales y ficticias, <span class="fst-italic"> retratando los momentos más importantes de su vida desde que tenía cuatro años.</span>
+               En la cinta se reúnen amigos de la infancia de Messi, compañeros de Newell's, del Barcelona y de la Selección Argentina, además de 
+               varios periodistas deportivos y exfutbolistas como <span class="fw-bold">Jorge Valdano </span>y<span class="fw-bold"> Johan Cruyff</span></p>
+            <a href="pages/bio.html" class="btn btn-primary">Ir a la biografía de Messi</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-lg">
+        <h2>Qatar 2022</h2>
+        <p class="fs-4 text-decoration-underline fst-italic">Proximos partidos:</p>
+        <div class="card-group d-flex flex-wrap justify-content-around">
+          <div class="card w-75 m-lg-4 m-2 mb-4 rounded-5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Saudi_Arabia_%28type_2%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_2%29.svg.png" class="card-img-top h-50" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Arabia Saudita</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card w-75 m-lg-4 m-2 mb-4 rounded-5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/1200px-Flag_of_Poland.svg.png" class="card-img-top h-50" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Polonia</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card w-75 m-lg-4 m-2 mb-4 rounded-5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1280px-Flag_of_Mexico.svg.png" class="card-img-top h-50" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">México</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>  
+          
+    </main>
+    <footer>
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md">
+            <a href="#logo" class="text-black">Inicio</a>
+          </div>
+            <div class="col-md">
+              Copyright - All rights reserved 2022
+            </div>
+            <div class="col-md">
+             <a href="https://www.instagram.com/leomessi/"><i class="bi bi-instagram"></i></a> 
+             <a href="https://www.facebook.com/leomessi/"><i class="bi bi-facebook"></i></a> 
+             <a href="https://www.youtube.com/user/leomessi"><i class="bi bi-youtube"></i></a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

@@ -1,17 +1,48 @@
 /* Selectores */
 
-body {
+body,
+main {
   background: linear-gradient(to bottom, #1393d7, white);
   min-height: 100vh;
 }
 
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  padding: 0.8em;
+}
+
+i {
+  color: black;
+  font-size: 1.5rem;
+  margin: 0.15em;
+}
+
 nav {
-  background: url(../pictures/wallpaperflare-cropped.jpg), no-repeat;
-  background-position: 50% 47%;
+  background: url(https://images7.alphacoders.com/116/1161476.jpg), no-repeat;
+  background-position: 50% 48%;
   background-size: cover;
 }
 
+footer {
+  background-color: #1393d7;
+}
+
 /* Clases */
+
+.carousel-inner {
+  max-height: 87vh;
+  max-width: 83vw;
+  margin: auto;
+}
 
 .nav-item {
   font-size: 1.6rem;
@@ -19,6 +50,10 @@ nav {
 
 .navbar-collapse {
   justify-content: end;
+}
+
+#movie-card {
+  width: 80%;
 }
 
 /* ID's */
