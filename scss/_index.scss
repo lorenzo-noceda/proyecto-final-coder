@@ -1,10 +1,9 @@
 /* INDEX */
 
 .carousel-inner {
-  max-height: 87vh;
-  max-width: 95vw;
+  width: 95vw;
   margin: 2rem auto;
-  min-width: 200px;
+  max-width: 1500px;
 }
 
 #movie-card {
@@ -38,6 +37,6 @@
   }
 
   .carousel-inner {
-    max-width: 80vw;
+    width: 80vw;
   }
 }
