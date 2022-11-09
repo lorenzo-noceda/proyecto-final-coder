@@ -9,7 +9,7 @@
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      href="pictures/messi - copia.png"
+      href="pictures/messi-logo.png"
       type="image/x-icon"
     />
 
@@ -22,153 +22,279 @@
     />
 
     <!--BS Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
 
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark">
-      <div class="container-fluid">
-        <a href="index.html" class="navbar-brand"
-          ><img src="pictures/messi - copia.png" id="logo" alt="logoMessi"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#nav"
-          aria-controls="nav"
-          aria-label="Expand Navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link active" aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="pages/bio.html" class="nav-link">Biografia</a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/top10.html" class="nav-link">Top 10</a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/tienda.html" class="nav-link">Tienda</a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/sorteo.html" class="nav-link">Sorteo</a>
-            </li>
-          </ul>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand">
+            <img
+              src="pictures/messi-logo.png"
+              id="logo"
+              alt="Logo de la marca Messi"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-label="Expand Navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="pages/bio.html" class="nav-link">Biografia</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/logros.html" class="nav-link">Logros</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/tienda.html" class="nav-link">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/sorteo.html" class="nav-link">Sorteo</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown ms-0">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle fs-5"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Español
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Español</a></li>
+                  <li><a href="#" class="dropdown-item">English</a></li>
+                  <li><a href="#" class="dropdown-item">Português</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="navbar-collapse justify-content-end">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown ms-0">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle fs-5"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Español</a
-              >
-              <ul class="dropdown-menu">
-                <li><a href="#" class="dropdown-item">Español</a></li>
-                <li><a href="#" class="dropdown-item">English</a></li>
-                <li><a href="#" class="dropdown-item">Português</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
+
+    <!-- Main -->
     <main>
       <h1>Bienvenidos a la web de Leo Messi</h1>
-
-      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      
+      <section class="pb-3">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="pictures/messi-besando-copa.jpg"
+                class="d-block w-100"
+                alt="Messi besando la Copa America"
+              />
+              <div class="carousel-caption d-none d-lg-block">
+                <h5>Copa America 2021</h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="pictures/messi-gol-clasico.jpg"
+                class="d-block w-100"
+                alt="Messi mostrando su camiseta luego de un gol"
+              />
+              <div class="carousel-caption d-none d-lg-block">
+                <h5>Real Madrid vs Barcelona - 2017</h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="pictures/arg-semifinales.jpg"
+                class="d-block w-100"
+                alt="Plantel argentino celebrando el pase a la final"
+              />
+              <div class="carousel-caption d-none d-lg-block">
+                <h5>Semifinales - Mundial 2014</h5>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img src="https://www.lavoz.com.ar/resizer/wSyRrDo5NcKR5x6CcC75A_bl0Yg=/1200x630/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/UI5O5B6Q2VES7G7NLNSZN6FULI.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-lg-block">
-              <h5>Copa America 2021</h5>
+      </section>
+
+      <section class="py-3 p-lg-5">
+        <div class="container d-flex flex-column align-items-center">
+          <h2 class="mb-3">
+            <span class="fst-italic">"Messi" - </span>La pelicula
+          </h2>
+          <div class="card" id="movie-card">
+            <div class="ratio ratio-16x9" id="movie-video">
+              <iframe
+                src="https://www.youtube.com/embed/C_BFQG40JYs"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="pictures/messi-gol-clasico.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-lg-block">
-              <h5>Real Madrid vs Barcelona - 2017</h5>
+            <div class="card-body">
+              <p class="card-text">
+                <span class="fst-italic">Messi</span> es una película documental
+                de 2014 que trata de la vida y la carrera del futbolista
+                argentino <span class="fw-bold"> Lionel Andrés Messi</span>,
+                usando imágenes reales y ficticias,
+                <span class="fst-italic">
+                  retratando los momentos más importantes de su vida </span
+                >desde que tenía cuatro años. En la cinta se reúnen amigos de la
+                infancia de Messi, compañeros de Newell's, del Barcelona y de la
+                Selección Argentina, además de varios periodistas deportivos y
+                exfutbolistas como
+                <span class="fw-bold">Jorge Valdano </span>y<span
+                  class="fw-bold"
+                >
+                  Johan Cruyff</span
+                >
+              </p>
             </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="https://www.lavoz.com.ar/resizer/hM0_qL4V8-ovg5H9ZbFi2xSvkAQ=/1200x630/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/G5DXL2JAUVFF5EJ6KT35CEERAM.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-lg-block">
-              <h5>Semifinales - Mundial 2014</h5>
+            <div class="card-footer border-secondary text-center">
+              <a href="pages/bio.html" class="btn btn-primary">
+                <i class="bi bi-arrow-right-circle text-white fs-5"></i> Ir a la
+                biografía de Messi</a
+              >
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      </section>
 
-      <div class="container d-flex justify-content-center my-5">
-        <div class="card border-secondary rounded-4" id="movie-card">
-          <h4 class="card-title"><span class="fst-italic">"Messi" - </span>La pelicula</h4>
-          <div class="ratio ratio-16x9 w-75 mx-auto">
-            <iframe src="https://www.youtube.com/embed/C_BFQG40JYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>          
-          <div class="card-body">
-            <p class="card-text">Messi es una película documental de 2014 que trata de la vida y la carrera del futbolista argentino <span class="fw-bold"> Lionel Messi</span>, 
-              usando imágenes reales y ficticias, <span class="fst-italic"> retratando los momentos más importantes de su vida desde que tenía cuatro años.</span>
-               En la cinta se reúnen amigos de la infancia de Messi, compañeros de Newell's, del Barcelona y de la Selección Argentina, además de 
-               varios periodistas deportivos y exfutbolistas como <span class="fw-bold">Jorge Valdano </span>y<span class="fw-bold"> Johan Cruyff</span></p>
-            <a href="pages/bio.html" class="btn btn-primary">Ir a la biografía de Messi</a>
+      <section class="py-5">
+        <div class="container-xl">
+          <div class="row justify-content-center">
+            <img
+              src="pictures/logo-mundial.png"
+              class="p-4 p-lg-5 w-100 max-w-850"
+              alt=""
+            />
+          </div>
+          <h2 class="ms-3 fst-italic fw-normal">Próximos partidos:</h2>
+          <div class="card-group d-flex flex-wrap justify-content-around">
+            <div class="card w-75 m-lg-4 m-2 mb-4 rounded-5">
+              <img
+                src="pictures/arabia-saudi.png"
+                class="card-img-top h-50"
+                alt="Bandera de Arabia Saudita"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Arabia Saudita</h5>
+                <ul>
+                  <li>Fecha y hora: 22/11 - 07hs (Arg)</li>
+                  <li>Estadio: Lusail Iconic</li>
+                  <li>Capacidad: 80.000 espectadores</li>
+                  <li>Puesto FIFA: 51</li>
+                  <li>Mejor jugador: Salem Al-Dawsari</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card w-75 m-lg-4 m-2 mb-4 rounded-5">
+              <img
+                src="pictures/mexico.jpg"
+                class="card-img-top h-50"
+                alt="Bandera de Mexico"
+              />
+              <div class="card-body">
+                <h5 class="card-title">México</h5>
+                <ul>
+                  <li>Fecha y hora: 26/11 - 16hs (Arg)</li>
+                  <li>Estadio: Lusail Iconic</li>
+                  <li>Capacidad: 80.000 espectadores</li>
+                  <li>Puesto FIFA: 13</li>
+                  <li>Mejor jugador: Hirving Lozano</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card w-75 m-lg-4 m-2 mb-4 rounded-5">
+              <img
+                src="pictures/polonia.png"
+                class="card-img-top h-50"
+                alt="Bandera de Polonia"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Polonia</h5>
+                <ul>
+                  <li>Fecha y hora: 30/11 - 16hs (Arg)</li>
+                  <li>Estadio: Stadium 974</li>
+                  <li>Capacidad: 40.000 espectadores</li>
+                  <li>Puesto FIFA: 26</li>
+                  <li>Mejor jugador: Robert Lewandowski</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="container-lg">
-        <h2>Qatar 2022</h2>
-        <p class="fs-4 text-decoration-underline fst-italic">Proximos partidos:</p>
-        <div class="card-group d-flex flex-wrap justify-content-around">
-          <div class="card w-75 m-lg-4 m-2 mb-4 rounded-5">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Saudi_Arabia_%28type_2%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_2%29.svg.png" class="card-img-top h-50" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Arabia Saudita</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card w-75 m-lg-4 m-2 mb-4 rounded-5">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/1200px-Flag_of_Poland.svg.png" class="card-img-top h-50" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Polonia</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card w-75 m-lg-4 m-2 mb-4 rounded-5">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1280px-Flag_of_Mexico.svg.png" class="card-img-top h-50" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">México</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>  
-      </div>
-          
+      </section>
     </main>
+
+    <!-- Footer -->
     <footer>
       <div class="container-fluid">
         <div class="row text-center">
@@ -176,18 +302,18 @@
             <a href="#logo" class="text-black">Inicio</a>
           </div>
             <div class="col-md">
-              Copyright - All rights reserved 2022
+              © Copyright - All rights reserved 2022
             </div>
             <div class="col-md">
-             <a href="https://www.instagram.com/leomessi/"><i class="bi bi-instagram"></i></a> 
-             <a href="https://www.facebook.com/leomessi/"><i class="bi bi-facebook"></i></a> 
-             <a href="https://www.youtube.com/user/leomessi"><i class="bi bi-youtube"></i></a> 
+             <a href="https://www.instagram.com/leomessi/" target="_blank"><i class="bi bi-instagram"></i></a> 
+             <a href="https://www.facebook.com/leomessi/" target="_blank"><i class="bi bi-facebook"></i></a> 
+             <a href="https://github.com/LorenzoN19?tab=repositories" target="_blank"><i class="bi bi-github"></i></a> 
             </div>
           </div>
         </div>
       </div>
     </footer>
-    
+
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

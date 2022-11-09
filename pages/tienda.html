@@ -9,7 +9,7 @@
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      href="../pictures/messi - copia.png"
+      href="../pictures/messi-logo.png"
       type="image/x-icon"
     />
 
@@ -22,140 +22,156 @@
     />
 
     <!--BS Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark">
-      <div class="container-fluid">
-        <a href="../index.html" class="navbar-brand"
-          ><img src="../pictures/messi - copia.png" id="logo" alt="logoMessi"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#nav"
-          aria-controls="nav"
-          aria-label="Expand Navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="../index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="bio.html" class="nav-link">Biografia</a>
-            </li>
-            <li class="nav-item">
-              <a href="top10.html" class="nav-link">Top 10</a>
-            </li>
-            <li class="nav-item">
-              <a href="tienda.html" class="nav-link active" aria-current="page"
-                >Tienda</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="sorteo.html" class="nav-link">Sorteo</a>
-            </li>
-          </ul>
+    
+    <!-- Header-->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+          <a href="../index.html" class="navbar-brand"
+            ><img src="../pictures/messi-logo.png" id="logo" alt="logoMessi"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-label="Expand Navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="bio.html" class="nav-link">Biografia</a>
+              </li>
+              <li class="nav-item">
+                <a href="logros.html" class="nav-link">Logros</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="tienda.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Tienda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="sorteo.html" class="nav-link">Sorteo</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown ms-0">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle fs-5"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Español</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">Español</a></li>
+                  <li><a href="#" class="dropdown-item">English</a></li>
+                  <li><a href="#" class="dropdown-item">Português</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="navbar-collapse justify-content-end">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown ms-0">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle fs-5"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Español</a
-              >
-              <ul class="dropdown-menu">
-                <li><a href="#" class="dropdown-item">Español</a></li>
-                <li><a href="#" class="dropdown-item">English</a></li>
-                <li><a href="#" class="dropdown-item">Português</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
+
+    <!-- Main -->
     <main>
-      <h1>Tienda Messi</h1>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
-            <div class="card text-center">
-              <div class="card-header">
-                Buzo negro #MESSI
+      <h1 class="pt-4 pb-lg-2 pb-xl-0">Tienda Messi</h1>
+      <section class="p-3 p-xl-5">
+        <div class="container-fluid">
+          <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col d-flex justify-content-center mb-4">
+              <div class="card text-center">
+                <div class="card-header">Buzo negro MESSI</div>
+                <div class="card-body">
+                  <img
+                    src="../pictures/buzo-messi.jpg"
+                    class="w-100 tienda-img"
+                    alt="Buzo negro marca Messi"
+                  />
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+                <div class="card-footer text-success fw-bold">$60.00</div>
               </div>
-              <div class="card-body">
-                <img src="../pictures/buzo-messi.jpg" class="w-100 tienda-img" alt="">
-                <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+              <div class="card text-center">
+                <div class="card-header">Remera rosa GOAT</div>
+                <div class="card-body">
+                  <img
+                    src="../pictures/remera-goat.jpg"
+                    class="w-100 tienda-img"
+                    alt="Remera rosa diseño GOAT"
+                  />
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+                <div class="card-footer text-success fw-bold">$60.00</div>
               </div>
-              <div class="card-footer text-success fw-bold">
-                $60.00
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+              <div class="card text-center">
+                <div class="card-header">Remera estampada MESSI</div>
+                <div class="card-body">
+                  <img
+                    src="../pictures/remera-messi.jpg"
+                    class="w-100 tienda-img"
+                    alt="Remera blanca con Messi de perfil"
+                  />
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+                <div class="card-footer text-success fw-bold">$60.00</div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center mb-4">
+              <div class="card text-center">
+                <div class="card-header">Remera estilo GAMER</div>
+                <div class="card-body">
+                  <img
+                    src="../pictures/remera-gamer.jpg"
+                    class="w-100 tienda-img"
+                    alt="Remera negra estilo gamer"
+                  />
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+                <div class="card-footer text-success fw-bold">$60.00</div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
-            <div class="card text-center">
-              <div class="card-header">
-                Remera rosa GOAT
-              </div>
-              <div class="card-body">
-                <img src="https://cdn.shopify.com/s/files/1/0252/7490/8726/products/LM1027-GOATTEECOLOR-HeatherOrchid01_1800x1800.jpg?v=1658188127" class="w-100 tienda-img" alt="" >
-                <a href="#" class="btn btn-primary">Añadir al carrito</a>
-              </div>
-              <div class="card-footer text-success fw-bold">
-                $60.00
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
-            <div class="card text-center">
-              <div class="card-header">
-                Remera estampada #MESSI
-              </div>
-              <div class="card-body">
-                <img src="https://cdn.shopify.com/s/files/1/0252/7490/8726/products/IconicMessiPortraitGraphic_4477665509430_01WHITE-SLEEVELOGO_01_1800x1800.jpg?v=1600700570" class="w-100 tienda-img" alt="">
-                <a href="#" class="btn btn-primary">Añadir al carrito</a>
-              </div>
-              <div class="card-footer text-success fw-bold">
-                $60.00
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
-            <div class="card text-center">
-              <div class="card-header">
-                Remera estilo GAMER
-              </div>
-              <div class="card-body">
-                <img src="https://cdn.shopify.com/s/files/1/0252/7490/8726/products/LM723MESSIGAMERTEE-Black01_1800x1800.jpg?v=1600700698" class="w-100 tienda-img" alt="">
-                <a href="#" class="btn btn-primary">Añadir al carrito</a>
-              </div>
-              <div class="card-footer text-success fw-bold">
-                $60.00
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-column align-content-center">
-          <h4 class="mb-0 pb-0 mt-4">Ir al carrito</h4>
+          <div class="d-flex flex-column align-content-center">
+            <h4 class="mb-0 pb-0 mt-4 fw-lighter">Ir al carrito</h4>
             <div class="m-3 mx-auto">
-          <a class="btn btn-outline-success" href="#">          
-            <i class="bi bi-cart" id="carrito"></i>
-          </a>
+              <a id="btn-carrito" href="#">
+                <i class="bi bi-cart" id="carrito"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
+      </section>
     </main>
+
+    <!-- Footer -->
     <footer>
       <div class="container-fluid">
         <div class="row text-center">
@@ -163,12 +179,12 @@
             <a href="#logo" class="text-black">Inicio</a>
           </div>
             <div class="col-md">
-              Copyright - All rights reserved 2022
+              © Copyright - All rights reserved 2022
             </div>
             <div class="col-md">
-             <a href="https://www.instagram.com/leomessi/"><i class="bi bi-instagram"></i></a> 
-             <a href="https://www.facebook.com/leomessi/"><i class="bi bi-facebook"></i></a> 
-             <a href="https://www.youtube.com/user/leomessi"><i class="bi bi-youtube"></i></a> 
+             <a href="https://www.instagram.com/leomessi/" target="_blank"><i class="bi bi-instagram"></i></a> 
+             <a href="https://www.facebook.com/leomessi/" target="_blank"><i class="bi bi-facebook"></i></a> 
+             <a href="https://github.com/LorenzoN19?tab=repositories" target="_blank"><i class="bi bi-github"></i></a> 
             </div>
           </div>
         </div>

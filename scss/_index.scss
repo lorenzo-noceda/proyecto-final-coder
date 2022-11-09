@@ -1,0 +1,43 @@
+/* INDEX */
+
+.carousel-inner {
+  max-height: 87vh;
+  max-width: 95vw;
+  margin: 2rem auto;
+  min-width: 200px;
+}
+
+#movie-card {
+  max-width: 1000px;
+  width: 90vw;
+  border: 1px solid black;
+  border-radius: 15px;
+
+  &:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+#movie-video {
+  width: 95%;
+  margin: 20px auto 0;
+}
+
+/* index media-query */
+
+@media screen and (min-width: 768px) {
+  #movie-card {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #movie-card {
+    width: 60vw;
+  }
+
+  .carousel-inner {
+    max-width: 80vw;
+  }
+}

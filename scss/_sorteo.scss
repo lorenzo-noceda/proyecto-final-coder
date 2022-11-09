@@ -1,0 +1,32 @@
+/* SORTEO */
+
+.sorteo-form {
+  border: 8px double rgba(0, 0, 0, 0.7);
+  color: white;
+  background-color: $secondary-color;
+  display: flex;
+  flex-flow: column wrap;
+  border-radius: 2%;
+  font-weight: 600;
+  padding: 1.5em;
+}
+
+/* sorteo media-query*/
+
+@media screen and (min-width: 992px) {
+  .sorteo-form {
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sorteo-form {
+    width: 65vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .sorteo-form {
+    width: 55vw;
+  }
+}

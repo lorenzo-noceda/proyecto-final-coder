@@ -1,0 +1,29 @@
+/* BIOGRAFÍA */
+
+.bio-p {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.bio-img,
+.bio-p {
+  width: 95vw;
+}
+
+/* bio media-query */
+
+@media screen and (min-width: 768px) {
+  .bio-img,
+  .bio-p {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bio-img,
+  .bio-p {
+    width: 55vw;
+  }
+}

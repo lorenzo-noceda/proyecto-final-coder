@@ -9,7 +9,7 @@
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      href="../pictures/messi - copia.png"
+      href="../pictures/messi-logo.png"
       type="image/x-icon"
     />
 
@@ -25,13 +25,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark">
+
+    <!--Header-->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container-fluid">
         <a href="../index.html" class="navbar-brand"
-          ><img src="../pictures/messi - copia.png" id="logo" alt="logoMessi"
+          ><img src="../pictures/messi-logo.png" id="logo" alt="logoMessi"
         /></a>
         <button
           class="navbar-toggler"
@@ -50,14 +53,14 @@
             </li>
             <li class="nav-item">
               <a
-                href="pages/bio.html"
+                href="bio.html"
                 class="nav-link active"
                 aria-current="page"
                 >Biografia</a
               >
             </li>
             <li class="nav-item">
-              <a href="top10.html" class="nav-link">Top 10</a>
+              <a href="logros.html" class="nav-link">Logros</a>
             </li>
             <li class="nav-item">
               <a href="tienda.html" class="nav-link">Tienda</a>
@@ -87,30 +90,35 @@
           </ul>
         </div>
       </div>
-    </nav>
+      </nav>
+    </header>
+
+    <!-- Main -->
     <main>
-        <h1 class="m-0">Biografia de Leo Messi</h1>
-        <div class="container-sm w-75 text-center mb-5">
+        <h1 class="mb-4">Biografia de Leo Messi</h1>
+        <div class="container-md text-center mb-5">
           <h3>Infancia:</h3>
-          <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/CUFGG7JI2ZEHVAPYV5CUZIURP4.jpg" class="bio-img w-100" alt="">
-          <p class="my-2 bio-p max-w-700 mx-auto w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sapiente assumenda repudiandae eaque eos nulla, eum exercitationem blanditiis, similique natus, tempore quo obcaecati numquam? Est vel tempora ipsam debitis unde!</p>
+          <img src="../pictures/messi-infancia.jpg" class="bio-img" alt="Messi de niño">
+          <p class="my-2 bio-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sapiente assumenda repudiandae eaque eos nulla, eum exercitationem blanditiis, similique natus, tempore quo obcaecati numquam? Est vel tempora ipsam debitis unde!</p>
         </div>
-        <div class="container-sm w-75 text-center my-5">
+        <div class="container-md text-center my-5 py-4">
           <h3>Barcelona:</h3>
-          <img src="https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/JOCRPO4RUBBCVODS4BKC2NDVJY" class="bio-img w-100" alt="">
-          <p class="my-2 bio-p max-w-700 mx-auto w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sapiente assumenda repudiandae eaque eos nulla, eum exercitationem blanditiis, similique natus, tempore quo obcaecati numquam? Est vel tempora ipsam debitis unde!</p>
+          <img src="../pictures/messi-barca.jpg" class="bio-img" alt="Messi celebrando la Champions con Suarez y Neymar">
+          <p class="my-2 bio-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sapiente assumenda repudiandae eaque eos nulla, eum exercitationem blanditiis, similique natus, tempore quo obcaecati numquam? Est vel tempora ipsam debitis unde!</p>
         </div>
-        <div class="container-sm w-75 text-center my-5">
+        <div class="container-md text-center my-5 py-4">
           <h3>Argentina:</h3>
-          <img src="../pictures/messi-celebrando.jpg" class="bio-img w-100" alt="">
-          <p class="my-2 bio-p max-w-700 mx-auto w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sapiente assumenda repudiandae eaque eos nulla, eum exercitationem blanditiis, similique natus, tempore quo obcaecati numquam? Est vel tempora ipsam debitis unde!</p>
+          <img src="../pictures/messi-levantando-copamerica.jpg" class="bio-img" alt="Messi levantando la Copa America">
+          <p class="my-2 bio-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sapiente assumenda repudiandae eaque eos nulla, eum exercitationem blanditiis, similique natus, tempore quo obcaecati numquam? Est vel tempora ipsam debitis unde!</p>
         </div>
-        <div class="container-sm w-75 text-center my-5">
+        <div class="container-md text-center my-5 py-4">
           <h3>PSG:</h3>
-          <img src="../pictures/messi-psg.jpg" class="bio-img w-100" alt="">
-          <p class="my-2 bio-p max-w-700 mx-auto w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sapiente assumenda repudiandae eaque eos nulla, eum exercitationem blanditiis, similique natus, tempore quo obcaecati numquam? Est vel tempora ipsam debitis unde!</p>
+          <img src="../pictures/messi-psg.jpg" class="bio-img" alt="Messi celebrando un gol con el PSG luciendo la 30">
+          <p class="my-2 bio-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sapiente assumenda repudiandae eaque eos nulla, eum exercitationem blanditiis, similique natus, tempore quo obcaecati numquam? Est vel tempora ipsam debitis unde!</p>
         </div>
     </main>
+
+    <!-- Footer -->
     <footer>
       <div class="container-fluid">
         <div class="row text-center">
@@ -118,12 +126,12 @@
             <a href="#logo" class="text-black">Inicio</a>
           </div>
             <div class="col-md">
-              Copyright - All rights reserved 2022
+              © Copyright - All rights reserved 2022
             </div>
             <div class="col-md">
-             <a href="https://www.instagram.com/leomessi/"><i class="bi bi-instagram"></i></a> 
-             <a href="https://www.facebook.com/leomessi/"><i class="bi bi-facebook"></i></a> 
-             <a href="https://www.youtube.com/user/leomessi"><i class="bi bi-youtube"></i></a> 
+             <a href="https://www.instagram.com/leomessi/" target="_blank"><i class="bi bi-instagram"></i></a> 
+             <a href="https://www.facebook.com/leomessi/" target="_blank"><i class="bi bi-facebook"></i></a> 
+             <a href="https://github.com/LorenzoN19?tab=repositories" target="_blank"><i class="bi bi-github"></i></a> 
             </div>
           </div>
         </div>

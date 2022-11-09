@@ -1,0 +1,30 @@
+/* TIENDA */
+
+.tienda-img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+#btn-carrito {
+  display: inline-block;
+  border-radius: 10%;
+  border: 3px solid $cool-green;
+  transition: 0.4s all ease-in;
+
+  &:hover {
+    background-color: $cool-green;
+  }
+}
+
+#carrito {
+  color: $cool-green;
+  font-size: 3rem;
+  padding: 22px;
+  margin: 0;
+  transition: 0.4s all ease-in;
+
+  &:hover,
+  &:focus {
+    color: white;
+  }
+}
