@@ -9,24 +9,53 @@
   border-radius: 2%;
   font-weight: 600;
   padding: 1.5em;
-}
 
-/* sorteo media-query*/
+  @media screen and (min-width: 992px) {
+    & {
+      width: 80vw;
+    }
+  }
 
-@media screen and (min-width: 992px) {
-  .sorteo-form {
-    width: 80vw;
+  @media screen and (min-width: 1200px) {
+    & {
+      width: 65vw;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    & {
+      width: 55vw;
+    }
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .sorteo-form {
-    width: 65vw;
+.sorteo-btns [type="submit"] {
+  position: relative;
+
+  @media screen and (min-width: 992px) {
+    &:hover::after {
+      content: "¡Gracias por participar!";
+      position: absolute;
+      top: 225%;
+      width: 200px;
+      left: 27.5vw;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:hover::after {
+      left: 23vw;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    &:hover::after {
+      left: 20vw;
+    }
   }
 }
 
-@media screen and (min-width: 1400px) {
-  .sorteo-form {
-    width: 55vw;
-  }
+label.required::after {
+  content: "*";
 }

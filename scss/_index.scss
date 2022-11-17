@@ -1,9 +1,22 @@
 /* INDEX */
 
 .carousel-inner {
-  width: 95vw;
+  width: 100vw;
   margin: 2rem auto;
   max-width: 1500px;
+  max-height: 98vh;
+
+  @media screen and (min-width: 576px) {
+    & {
+      width: 95vw;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    & {
+      width: 80vw;
+    }
+  }
 }
 
 #movie-card {
@@ -16,27 +29,21 @@
     box-shadow: none;
     transform: none;
   }
+
+  @media screen and (min-width: 768px) {
+    & {
+      width: 75vw;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    & {
+      width: 60vw;
+    }
+  }
 }
 
 #movie-video {
   width: 95%;
   margin: 20px auto 0;
-}
-
-/* index media-query */
-
-@media screen and (min-width: 768px) {
-  #movie-card {
-    width: 75vw;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #movie-card {
-    width: 60vw;
-  }
-
-  .carousel-inner {
-    width: 80vw;
-  }
 }

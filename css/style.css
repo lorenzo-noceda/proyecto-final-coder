@@ -26,13 +26,17 @@ footer {
 }
 
 .card {
-  min-width: 200px;
-  max-width: 350px;
+  min-width: 235px;
+  max-width: 400px;
   transition: all 0.2s ease-in;
 }
 .card:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
+}
+
+.not-underline {
+  text-decoration: none;
 }
 
 .max-w-400 {
@@ -83,6 +87,15 @@ nav {
   letter-spacing: 0.75px;
   border-bottom: 2px solid transparent;
 }
+@media screen and (min-width: 768px) {
+  .nav-link:hover {
+    transition: all 0.3s ease-in;
+    color: white;
+  }
+  .nav-link:not(.active):hover {
+    border-bottom: 2px solid white;
+  }
+}
 
 #logo {
   width: 70px;
@@ -90,21 +103,22 @@ nav {
   border-radius: 25%;
 }
 
-/* navbar media-query */
-@media screen and (min-width: 768px) {
-  .nav-link:hover {
-    transition: all 0.5s ease-in;
-    color: white;
-  }
-  .nav-link:not(.active):hover {
-    border-bottom: 2px solid white;
-  }
-}
 /* INDEX */
 .carousel-inner {
-  width: 95vw;
+  width: 100vw;
   margin: 2rem auto;
   max-width: 1500px;
+  max-height: 98vh;
+}
+@media screen and (min-width: 576px) {
+  .carousel-inner {
+    width: 95vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carousel-inner {
+    width: 80vw;
+  }
 }
 
 #movie-card {
@@ -117,13 +131,6 @@ nav {
   box-shadow: none;
   transform: none;
 }
-
-#movie-video {
-  width: 95%;
-  margin: 20px auto 0;
-}
-
-/* index media-query */
 @media screen and (min-width: 768px) {
   #movie-card {
     width: 75vw;
@@ -133,10 +140,13 @@ nav {
   #movie-card {
     width: 60vw;
   }
-  .carousel-inner {
-    width: 80vw;
-  }
 }
+
+#movie-video {
+  width: 95%;
+  margin: 20px auto 0;
+}
+
 /* BIOGRAFÍA */
 .bio-p {
   text-align: center;
@@ -151,8 +161,6 @@ nav {
   max-width: 1200px;
   max-height: 95vh;
 }
-
-/* bio media-query */
 @media screen and (min-width: 768px) {
   .bio-img,
 .bio-p {
@@ -165,10 +173,18 @@ nav {
     width: 55vw;
   }
 }
+
 /* LOGROS */
 .gif {
   width: 90%;
   max-width: 450px;
+}
+@media screen and (min-width: 992px) {
+  .gif {
+    max-width: 600px;
+    width: 50vw;
+    max-height: 300px;
+  }
 }
 
 .records-list {
@@ -191,14 +207,7 @@ nav {
   padding-top: 1em;
   list-style-type: "⚽";
 }
-
-/* logros media-query */
 @media screen and (min-width: 992px) {
-  .gif {
-    max-width: 600px;
-    width: 50vw;
-    max-height: 300px;
-  }
   .titulos-list {
     padding-bottom: 2em;
   }
@@ -209,10 +218,16 @@ nav {
     margin-top: 3em;
   }
 }
+
 /* TIENDA */
 .tienda-img {
   max-height: 300px;
   max-width: 300px;
+}
+
+.tienda-row {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 #btn-carrito {
@@ -247,8 +262,6 @@ nav {
   font-weight: 600;
   padding: 1.5em;
 }
-
-/* sorteo media-query*/
 @media screen and (min-width: 992px) {
   .sorteo-form {
     width: 80vw;
@@ -263,6 +276,34 @@ nav {
   .sorteo-form {
     width: 55vw;
   }
+}
+
+.sorteo-btns [type=submit] {
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .sorteo-btns [type=submit]:hover::after {
+    content: "¡Gracias por participar!";
+    position: absolute;
+    top: 225%;
+    width: 200px;
+    left: 27.5vw;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sorteo-btns [type=submit]:hover::after {
+    left: 23vw;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .sorteo-btns [type=submit]:hover::after {
+    left: 20vw;
+  }
+}
+
+label.required::after {
+  content: "*";
 }
 
 /*# sourceMappingURL=style.css.map */

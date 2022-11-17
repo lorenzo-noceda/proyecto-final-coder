@@ -14,23 +14,21 @@ nav {
   font-size: 1.6rem;
   letter-spacing: 0.75px;
   border-bottom: 2px solid transparent;
+
+  @media screen and (min-width: 768px) {
+    &:hover {
+      transition: all 0.3s ease-in;
+      color: white;
+    }
+
+    &:not(.active):hover {
+      border-bottom: 2px solid white;
+    }
+  }
 }
 
 #logo {
   width: 70px;
   border: 10px double white;
   border-radius: 25%;
-}
-
-/* navbar media-query */
-
-@media screen and (min-width: 768px) {
-  .nav-link:hover {
-    transition: all 0.5s ease-in;
-    color: white;
-  }
-
-  .nav-link:not(.active):hover {
-    border-bottom: 2px solid white;
-  }
 }

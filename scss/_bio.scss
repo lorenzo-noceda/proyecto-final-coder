@@ -12,20 +12,16 @@
   width: 95vw;
   max-width: 1200px;
   max-height: 95vh;
-}
 
-/* bio media-query */
-
-@media screen and (min-width: 768px) {
-  .bio-img,
-  .bio-p {
-    width: 75vw;
+  @media screen and (min-width: 768px) {
+    & {
+      width: 75vw;
+    }
   }
-}
 
-@media screen and (min-width: 992px) {
-  .bio-img,
-  .bio-p {
-    width: 55vw;
+  @media screen and (min-width: 992px) {
+    & {
+      width: 55vw;
+    }
   }
 }

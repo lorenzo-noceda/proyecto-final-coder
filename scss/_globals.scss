@@ -26,14 +26,18 @@ footer {
 }
 
 .card {
-  min-width: 200px;
-  max-width: 350px;
+  min-width: 235px;
+  max-width: 400px;
   transition: all 0.2s ease-in;
 
   &:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
   }
+}
+
+.not-underline {
+  text-decoration: none;
 }
 
 .max-w-400 {

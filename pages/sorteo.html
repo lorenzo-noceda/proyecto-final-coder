@@ -104,11 +104,11 @@
         <form action="#">
             <div class="container-lg shadow sorteo-form">
               <div>
-                <label for="nombre">Nombre:</label>
+                <label for="nombre" class="required">Nombre</label>
                 <input class="form-control my-2" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required maxlength="15"/>
-                <label for="apellido">Apellido:</label>
+                <label for="apellido" class="required">Apellido</label>
                 <input class="form-control my-2" type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required maxlength="25"/>
-                <label for="email">Email:</label>
+                <label for="email" class="required">Email</label>
                 <input class="form-control my-2" type="email" name="email" id="email" placeholder="Ingresa tu email" required maxlength="40">
               </div>
               <div class="mt-3">
@@ -142,7 +142,7 @@
               <label class="form-check-label" for="newsletter">¿Deseas recibir el newsletter?</label>
               <input class="form-check-input" type="checkbox" name="newsletter" id="newsletter" checked>
              </div>
-              <div>
+              <div class="sorteo-btns">
                 <button type="submit" class="btn btn-success border border-dark">Enviar</button>
                 <button type="reset" class="btn btn-danger border border-dark ms-2">Limpiar</button>
               </div>
@@ -155,11 +155,13 @@
     <footer>
       <div class="container-fluid">
         <div class="row text-center">
-          <div class="col-md">
-            <a href="#logo" class="text-black">Inicio</a>
+          <div class="col-md d-flex align-items-center justify-content-center">
+            <button type="button" class="btn btn-sm btn-dark p-0 px-2">
+              <a href="#logo" class="text-white not-underline"><i class="bi bi-arrow-up-circle text-white fs-6"></i> Inicio</a>
+            </button>
           </div>
-            <div class="col-md">
-              © Copyright - All rights reserved 2022
+            <div class="col-md d-flex align-items-center justify-content-center">
+             <span> © Copyright - All rights reserved 2022</span>
             </div>
             <div class="col-md">
              <a href="https://www.instagram.com/leomessi/" target="_blank"><i class="bi bi-instagram"></i></a> 

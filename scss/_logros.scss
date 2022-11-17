@@ -3,6 +3,14 @@
 .gif {
   width: 90%;
   max-width: 450px;
+
+  @media screen and (min-width: 992px) {
+    & {
+      max-width: 600px;
+      width: 50vw;
+      max-height: 300px;
+    }
+  }
 }
 
 .records-list {
@@ -27,25 +35,17 @@
   text-indent: 1.5%;
   padding-top: 1em;
   list-style-type: "⚽";
-}
 
-/* logros media-query */
-
-@media screen and (min-width: 992px) {
-  .gif {
-    max-width: 600px;
-    width: 50vw;
-    max-height: 300px;
+  @media screen and (min-width: 992px) {
+    & {
+      padding-bottom: 2em;
+    }
   }
 
-  .titulos-list {
-    padding-bottom: 2em;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .titulos-list {
-    padding-bottom: 0.5em;
-    margin-top: 3em;
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-bottom: 0.5em;
+      margin-top: 3em;
+    }
   }
 }
